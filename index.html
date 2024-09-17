@@ -3,32 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Vanilla weather app</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
+      <div class="container">
+        <form>
+          <input
+            type="search"
+            placeholder="enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="search" class="search-button" />
+        </form>
+
+        <main>
+          <hr />
+          <h1>city</h1>
+          <p>
+            Tuesday 16:40, mostly sunny<br />
+            Humidity:<strong>87%</strong>, Wind:<strong>7.2km/h</strong>
+          </p>
+
+          <div
+            class="current-weather-temperature"
+            id="current-weather-temperature"
+          >
+            🌤23°c
+          </div>
+          <p>forecast</p>
+          <hr />
+          <footer>
+            This project was coded by <a href=""> Anne Dube </a>, is
+            <a href="">open-sourced on Github</a> and
+            <a href="">hosted on Netlify</a>
+          </footer>
+        </main>
+      </div>
     </header>
-    <main>
-      <hr />
-      <h1>city</h1>
-      <p>
-        Tuesday 16:40, mostly sunny<br />
-        Humidity:<stong>87%</stong>, Wind:<strong>7.2km/h</strong>
-      </p>
-      ⛈23°c
-      <p>forecast</p>
-      <hr />
-      <footer>
-        This project was coded by <a href=""> Anne Dube </a>, is
-        <a href="">open-sourced on Github</a> and
-        <a href="">hosted on Netlify</a>
-      </footer>
-    </main>
   </body>
 </html>

@@ -1,4 +1,45 @@
 h1 {
-  font-size: 38px;
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
   line-height: 48px;
+}
+p {
+  font-family: "Montserrat", system-ui;
+}
+body {
+  background-color: #5fc9f3;
+}
+
+.current-weather-temperature {
+  position: relative;
+  display: flex;
+  left: 450px;
+  bottom: 70px;
+  width: 100;
+  font-size: 45px;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+.search-button {
+  background-color: #1e549f;
+  color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.search-input {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+
+  color: black;
+  font-size: 18px;
 }
