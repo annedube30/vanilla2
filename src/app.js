@@ -39,6 +39,31 @@ let now = new Date();
 let p = document.querySelector("#date-time");
 p.innerHTML = formatDate(now);
 
+let forecastHtml = "";
+let days = ["Sun", "Mon", "Tue", "wed", "Thur", "Fri", "Sat"];
+response.data.day.forEach(function (day) {
+  forecastHtml =
+    forecastHtml +
+    `<div class="weather-forecast">
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date"></div>
+        <div class="weather-forecast-icon"></div>
+        <div class="weather-forecast-temperatures">
+          <strong></strong>
+        </div>
+        <div class="weather-forecast-temperature"></div>
+      </div>
+    </div>`;
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+});
+displayForecast();
+
+function displayForecast(response) {
+  console.log(response.data);
+}
+getForecast(response.data.city);
+
 function displayTemperature(response) {
   console.log(response);
   let temperatureElement = document.querySelector("#temperature");
@@ -56,6 +81,6 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.condition.description;
 
   temperatureElement.innerHTML = `${temperature}°c`;
-  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-  windspeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+
+  humidityElement.innerHTML = response.data.temperature.humidity;
 }
