@@ -1,5 +1,6 @@
 h1 {
   font-family: "Montserrat", system-ui;
+  color: #6c5b7c;
   font-optical-sizing: auto;
   font-weight: 100px;
   font-style: normal;
@@ -7,9 +8,10 @@ h1 {
 }
 p {
   font-family: "Montserrat", system-ui;
+  color: #6c5b7c;
 }
 body {
-  background-color: #5fc9f3;
+  background-color: #93e4c1;
 }
 
 .current-weather-temperature {
@@ -23,23 +25,27 @@ body {
 .container {
   max-width: 600px;
   margin: 20px auto;
-  background: white;
+  background: #fdfdcb;
+
   padding: 20px;
   border-radius: 15px;
 }
+
 .search-button {
-  background-color: #1e549f;
+  background-color: #f8b595;
   color: white;
   margin: 10px 0;
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
+  border: none;
 }
 .search-input {
   margin: 10px 0;
   padding: 15px;
   border-radius: 10px;
-
+  border: none;
+  background: #f8b595;
   color: black;
   font-size: 18px;
 }
