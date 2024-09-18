@@ -82,5 +82,7 @@ function displayTemperature(response) {
 
   temperatureElement.innerHTML = `${temperature}°c`;
 
-  humidityElement.innerHTML = response.data.temperature.humidity;
+  humidityElement.innerHTML = `${response.data.temperatue.humidity}%`;
+
+  windspeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 }
