@@ -49,3 +49,11 @@ body {
   color: black;
   font-size: 18px;
 }
+img {
+  position: relative;
+  display: flex;
+  left: 450px;
+  bottom: 70px;
+  width: 100;
+  font-size: 45px;
+}

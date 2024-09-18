@@ -30,18 +30,24 @@
         <main>
           <hr />
           <div class="current-weather">
-            <h1 class="current-city" id="current-city">city</h1>
+            <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
-              <span id="date-time"></span>, mostly sunny<br />
-              Humidity:<strong>87%</strong>, Wind:<strong>7.2km/h</strong>
+              <span id="date-time"></span>,<span id="description">
+                mostly sunny</span
+              ><br />
+              Humidity:<strong id="Humidity">87%</strong>, Wind:<strong
+                id="wind-speed"
+                >7.2km/h</strong
+              >
             </p>
           </div>
 
-          <div
-            class="current-weather-temperature"
-            id="current-weather-temperature"
-          >
-            🌤23°c
+          <div class="wearther-app-temperature container">
+            <div id="icon"></div>
+            <div
+              class="current-weather-temperature"
+              id="current-weather-temperature"
+            ></div>
           </div>
           <p>forecast</p>
           <hr />
