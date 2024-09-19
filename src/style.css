@@ -18,10 +18,10 @@ body {
 .temperature-value {
   position: relative;
   display: flex;
-  left: 450px;
-  bottom: 190px;
+  right: -70px;
+  bottom: 40px;
   width: 100;
-  font-size: 45px;
+  font-size: 49px;
   color: #6c5b7c;
 }
 .container {
@@ -57,7 +57,7 @@ body {
   color: black;
   font-size: 18px;
 }
-img {
+icon {
   position: relative;
   display: flex;
   left: 450px;
@@ -84,13 +84,14 @@ footer {
 .weather-forecast-date {
   text-align: center;
   color: black;
-  font-size: 15px;
+  font-size: 20px;
 }
 .forecast-icon {
   width: 80px;
   height: 80px;
   margin: auto;
-  display: flex;
+  display: block;
+  unicode-bidi: isolate;
 }
 
 .weather-forecast-temperatures {
