@@ -21,10 +21,10 @@
             type="search"
             placeholder="enter a city..."
             required
-            class="search-form-input"
-            id="search-form-input"
+            class="input-city"
+            id="input-city"
           />
-          <input type="submit" value="search" class="search-form-button" />
+          <input type="submit" value="search" class="search-button" />
         </form>
 
         <main>
@@ -32,7 +32,9 @@
           <div class="current-weather">
             <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
-              <span id="date-time"></span>,<span id="description">
+              <span class="date-time" id="date-time"></span>,<span
+                id="description"
+              >
                 mostly sunny</span
               ><br />
               Humidity:
@@ -44,10 +46,10 @@
           </div>
 
           <div class="wearther-app-temperature container">
-            <div id="icon"></div>
-            <div class="temperature" id="temperature"></div>
+            <div class="icon" id="icon"></div>
+            <div class="temperature-value" id="temperature-value"></div>
           </div>
-          <div class="weather-forecast" id="forecast"></div>
+
           <hr />
           <footer>
             This project was coded by <a href=""> Anne Dube </a>, is
