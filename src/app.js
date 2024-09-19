@@ -5,7 +5,7 @@ function search(event) {
 
   let city = searchInput.value;
   let apikey = "db3364484d110at742a63o2f755d343b";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metri`;
 
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -39,31 +39,6 @@ let now = new Date();
 let p = document.querySelector("#date-time");
 p.innerHTML = formatDate(now);
 
-let forecastHtml = "";
-let days = ["Sun", "Mon", "Tue", "wed", "Thur", "Fri", "Sat"];
-response.data.day.forEach(function (day) {
-  forecastHtml =
-    forecastHtml +
-    `<div class="weather-forecast">
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date"></div>
-        <div class="weather-forecast-icon"></div>
-        <div class="weather-forecast-temperatures">
-          <strong></strong>
-        </div>
-        <div class="weather-forecast-temperature"></div>
-      </div>
-    </div>`;
-  let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = forecastHtml;
-});
-displayForecast();
-
-function displayForecast(response) {
-  console.log(response.data);
-}
-getForecast(response.data.city);
-
 function displayTemperature(response) {
   console.log(response);
   let temperatureElement = document.querySelector("#temperature");
@@ -82,7 +57,7 @@ function displayTemperature(response) {
 
   temperatureElement.innerHTML = `${temperature}°c`;
 
-  humidityElement.innerHTML = `${response.data.temperatue.humidity}%`;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 
   windspeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 }
