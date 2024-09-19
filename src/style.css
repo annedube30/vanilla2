@@ -9,6 +9,7 @@ h1 {
 p {
   font-family: "Montserrat", system-ui;
   color: #6c5b7c;
+  line-height: 20px;
 }
 body {
   background-color: #93e4c1;
@@ -40,6 +41,11 @@ body {
   border-radius: 10px;
   font-size: 18px;
   border: none;
+  transition: all 150ms ease-in-out;
+}
+.search-button:hover {
+  background-color: brown;
+  cursor: pointer;
 }
 .input-city {
   margin: 10px 0;
@@ -61,4 +67,41 @@ img {
 }
 strong {
   color: #ff487e;
+}
+footer {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
+  color: brown;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0 auto;
+  margin-bottom: 20px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+}
+.forecast-icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temperature {
+  color: #ff487e;
+}
+.weather-forecast-temperature,
+.extreme {
+  padding: 0 9px;
 }

@@ -12,7 +12,7 @@ function showTemperature(response) {
   description.textContent = response.data.condition.description;
   humidity.textContent = `${response.data.temperature.humidity}%`;
   windSpeed.textContent = `${response.data.wind.speed}km/h`;
-  temperatureValue.textContent = `${temperature}°`;
+  temperatureValue.textContent = `${temperature}°c`;
   icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
   dateTime.textContent = showCurrentDate(date);
 
@@ -85,7 +85,7 @@ function showWeatherForecast(response) {
 
      <img class="forecast-icon" src="${day.condition.icon_url}"/>
     <div class="weather-forecast-temperatures>
-    <span class="weather-forecast-temperature"><strong class="high">${Math.round(
+    <span class="weather-forecast-temperature"><strong class="extreme">${Math.round(
       day.temperature.maximum
     )}°C</strong></span>
     <span class="weather-forecast-temperature">${Math.round(
