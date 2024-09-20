@@ -74,7 +74,7 @@ footer {
   text-align: center;
   margin: 10px 0;
   font-size: 20px;
-  color: #be3144;
+  color: black;
 }
 .weather-forecast {
   display: flex;
@@ -93,7 +93,6 @@ footer {
   height: 80px;
   margin: auto;
   display: block;
-  unicode-bidi: isolate;
 }
 
 .weather-forecast-temperatures {
